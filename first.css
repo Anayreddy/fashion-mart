@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* navigation bar styles */
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: #575757;
+    padding:5px 10px;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+}
+nav img{
+    width:40px;
+}
+ nav ul{
+    list-style-type: none;
+    display: flex;
+    gap:0px;
+    color:rgb(86, 30, 30);
+}
+
+
+/* header styles */
+header{
+    background-image: linear-gradient(to right,rgba(68,68,68,0.27),#303030),url("https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Logo.png");
+    background-repeat: no-repeat;
+    min-height:40vh;
+    background-size: contain;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:white;
+    font-size: 1.5rem;
+    
+
+    
+}
+header.header-content{
+    width:670;
+    color: rgb(99, 181, 144);
+}
+/* Main styles */
+main{
+    min-height: 100vh;
+    position:relative;
+    
+}
+.row1{
+
+    display:flex;
+    justify-content: space-around;
+
+}
+main .shirt-card{
+    width:300px;
+    padding: 15px;
+    text-align: center;
+    box-shadow:1px 1px 10px gray;
+    border-radius: 10px;
+    margin-top:50px;
+    position:relative;
+    z-index:0;
+
+}
+
+main img{
+    width:200px;
+}
+main button{
+    padding:5px 10px;
+    background-color: #736b6b;
+    border:none;
+    font-size:1.5rem
+
+}
+/* footer */
+
+footer{
+    margin-top:5  0px ;
+    display:flex;
+    justify-content:space-around;
+    background-color: gray;
+    color: whitesmoke;
+    padding:25px;
+    
+}
+
+.logo{
+    position:absolute;
+    width:70px;
+    top:-10px;
+    right:-10px;
+}
+.flipkart{
+    width:40px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    margin-bottom: 120px;
+}
+
+@media screen and (max-width:500px){
+    header{
+    background-image: url("https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Logo.png");
+   background-size:100% 300px;
+    }
+}
+main.row{
+    flex-direction: column;
+}
